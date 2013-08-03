@@ -1,0 +1,52 @@
+#topbar
+
+.card-overlay
+.card-modal
+
+#intro
+  .wrapper
+    .desc
+      Продажа парфюмерии
+      %span.dark Jo Malone
+      в Москве
+
+#benefits-block
+  .wrapper
+    .benefits
+      .benefit
+        .title
+          Официально
+        .text
+          Мы - официальный диллер Jo Malone в Москве. Мы продаем только оригинальную и сертифицированную продукцию.
+      .benefit
+        .title
+          Бесплатная доставка
+        .text
+          Мы бесплатно доставим вам ваш заказ, при условии, что вы сделали его до 15:00 текущего дня.
+      .benefit
+        .title
+          Гарантия качества
+        .text
+          Мы не продаем некачественную продуцию. Только подлинные ароматы Jo Malone и это того стоит определенно.
+
+
+#showcase
+  .wrapper
+    .showcase-header
+      .title
+        Наши ароматы
+      .filter
+        %a.active-item{href: '#'} Все ароматы
+        %a.disabled-item{href: '#'} Женские
+        %a.disabled-item{href: '#'} Мужские
+        %a.disabled-item{href: '#'} Юнисекс
+
+
+    .items
+      - for i in 1..20
+        .item
+          .image
+          .name
+            154 cologne
+          .sex
+            женский
